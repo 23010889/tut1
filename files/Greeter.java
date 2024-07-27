@@ -14,8 +14,7 @@ public class Greeter {
   public String sayHello() {
     ResourceBundle messages = ResourceBundle.getBundle("MessagesBundle", locale);
     String greeting = messages.getString("greeting");
-    return greeting + ", " + name + " ";
-
+    return greeting + ", " + name + " "; // Combine changes from both features
   }
   
 
@@ -32,4 +31,3 @@ public class Greeter {
     System.out.println(greeter.sayHello());
   }
 }
-
